@@ -1,0 +1,64 @@
+/*  La cascada */
+
+/* 
+
+    Especificidad 1:
+    - Selector de tipo
+    - Pseudoelementos
+    
+    Especificidad 10:
+    - Selector de clase
+    - Selector de atributo
+    - Pseudoclases
+
+    Especificidad 100:
+    - Selector de ID
+
+    (Rompes la especificidad con !important)
+
+*/
+
+
+body{
+    font-family: cascadia code ;
+    color: steelblue;
+    /* margin: 0; */
+}
+
+/* Ejemplo de especificidad */
+
+.title{
+    color: red;
+}
+
+#title{
+    color: greenyellow;
+}
+
+h1{
+    color: darkblue !important; 
+}
+
+/* Al agregarle !important se rompe la especificidad */
+/* h1{
+    color: darkblue !important; 
+} */
+
+/* h1{
+    margin: 0;
+} */
+
+.container{
+    color: green;
+    font-family: Arial;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+/* Herencia de estilos desde su contenedor padre */
+
+p{
+    color: black;
+    border: inherit ;
+    padding: inherit;
+}
