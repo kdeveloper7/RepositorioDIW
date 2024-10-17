@@ -1,0 +1,22 @@
+h2,h3{
+    font-size: 25px;
+    font-family: 'Arial';
+}
+
+.contenedor a{
+    text-decoration: none;
+    color: firebrick;
+}
+
+.contenedor>a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2+p{
+    color: gold;
+}
+
+h3~p{
+    color: indigo;
+}

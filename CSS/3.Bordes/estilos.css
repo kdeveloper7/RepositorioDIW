@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background: orangered;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    /* border: width style color; */
+    /* border: 10px dashed brown; */
+    
+    
+
+    /* border-width:top right bottom left;
+    border-style:top right bottom left;
+    border-color:top right bottom left; */
+
+    /* border-top: 10px solid brown;
+    border-right: 5px dashed white;
+    border-bottom:8px double black;
+    border-left:8px dotted steelblue ; */
+
+    border-top-width: 20px;
+    border-top-style: double;
+    border-top-color: crimson;
+
+    border-right-width: 30px;
+    border-right-style: dashed;
+    border-right-color: white;
+
+    border-bottom-width: 25px;
+    border-bottom-style: solid;
+    border-bottom-color: steelblue;
+
+    border-left-width: 15px;
+    border-left-style: dotted;
+    border-left-color: violet;
+}
+
+.card{
+    width: 400px;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px 0;
+    border: 1px solid black;
+}
+
+.img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius:50%;
+    /* border-top-left-radius: 50px;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:30px ;
+    border-bottom-left-radius:100px ; */
+}
+
+.name{
+    text-align: center;
+    font-family: Arial;
+}
+
+.cta{
+    display: block;
+    width: 150px;
+    background: crimson;
+    border-radius: 3px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 20px auto;
+}
+
+

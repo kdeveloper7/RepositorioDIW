@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 45px 0;
+    color: #fff;
+    background: rgba(78, 14, 138, 0.575);
+    background: #1b95aad5;
+    background: hsl(180, 40%, 20%);
+    background:#582660;
+}
+
+
+.title{
+    text-align: center;
+}
