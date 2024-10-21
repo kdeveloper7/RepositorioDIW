@@ -1,0 +1,151 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --height-nav: 70px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Poppins', sans-serif; */
+     font-family: "Roboto", sans-serif;
+    background: #f2f2f2;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav{
+    background: #143d64;
+    height: var(--height-nav);
+    color: #fff;
+    
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav__logo a  {
+    color: #fff;
+    text-decoration: none;
+     
+}
+
+.nav__logo{
+    padding-left: 1em;
+}
+.nav__links a, .nav__links li{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1em; 
+    list-style: none;
+}
+
+.nav__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 1rem;
+}
+
+.nav__links a:hover{
+    color: #6c63ff;
+    text-decoration: underline;
+}
+
+.hero__main{
+    display: flex;
+    height: calc(100vh - var(--height-nav));
+    align-items: center;
+    min-height: 600px;
+}
+
+.hero__texts{
+    flex: 1;
+}
+
+.hero__picture{
+    flex: 1;
+}
+
+.hero__img{
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+
+.hero__paragraph{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.cta{
+    background: #6c63ff;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+@media screen and (max-width:900px) {
+    
+    :root{
+        --height-nav: 100px;
+    } 
+
+
+    .nav__container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .hero__main{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .hero__picture{
+        order: -1;
+    }
+
+    .hero__img{
+        max-width: 380px;
+    }
+
+    .hero__texts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .hero__paragraph{
+        font-size: 1rem;
+    }
+}

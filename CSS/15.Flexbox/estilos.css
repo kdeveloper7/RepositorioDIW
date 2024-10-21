@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 502px;
+    height: 600px;
+    margin:20px  auto;
+    border: 1px solid #000;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    align-content:space-evenly;
+}
+
+.item{
+    flex: 1 0 100px;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    flex-shrink: 1;
+}
+
+
+.item1{
+    background: steelblue;
+    height: auto;
+    align-self: stretch;
+}
+
+.item2{
+    background: crimson;
+}
+
+.item3{
+    background: darkcyan;
+}
+
+.item4{
+    background: darkmagenta;
+}

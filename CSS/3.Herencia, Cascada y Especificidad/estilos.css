@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .enlaces{
+    display: inline-block;
+    text-decoration: none;
+    background: crimson;
+    color: white;
+    padding: 30px 20px;
+}
+.block{
+    display: none;
+    opacity: 0;
+} */
+
+
+.header{
+    height: 400px;
+    background: crimson;
+    color: white;
+    border:5px solid #000;
+    font-family: Arial;
+    padding: 10px ;
+    height: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+
+/* 
+1000 - inline css
+100  - ID
+10   -  Class Atributos 
+1    - Elemento
+*/
+
+.title{
+    font-size: 25px;
+    border: inherit;
+    padding: inherit;
+    text-align: initial;
+    color: initial;
+    font-family: initial;
+}
+
+
+
+
