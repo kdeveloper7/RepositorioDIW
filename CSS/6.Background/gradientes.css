@@ -19,12 +19,12 @@
     padding: 0.1px;
     height: 650px;
     background-image:linear-gradient(#00008b7e, #4683b481), url(img/hero.jpg);
-    background-image: linear-gradient(120deg, #a6c0fe7e 0%, #f680848f 100%), url(img/hero.jpg);
+    background-image: linear-gradient(120deg, #cefea67e 0%, #f680968f 100%), url(img/hero.jpg); /*degradado transparente*/
     background-position: center;
-    background-size: cover;
+    background-size: cover; /*escala*/
     background-repeat: no-repeat;
 
-    background-image: linear-gradient(to bottom, #ec2F4B, #009FFF);
+    /* background-image: linear-gradient(to bottom, #ec2F4B, #009FFF); */
 }
 
 .title{

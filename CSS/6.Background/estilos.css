@@ -5,8 +5,13 @@
 }
 
 
+body{
+    background-image:url(img/textura.png);
+    /* background-repeat: no-repeat; */
+}
+
 .container{
-    width: 70%;
+    width: 30%;
     height: 300px;
     margin: 30px auto;
     /* background: rgb(100,100,250); */
@@ -22,7 +27,7 @@
     width: 100%;
     height: 100vh;
     /* height: 400px; */
-    padding: 0.1px;
+    padding: 0.1px; /*Es importante para quitarl el efecto del colapso de márgenes*/
     /* margin-top: 100px; */
     background-image: url('img/img-hero.png');
     background-repeat: no-repeat;

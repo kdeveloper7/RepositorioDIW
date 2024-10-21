@@ -44,9 +44,9 @@
 
 .card{
     width: 400px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     height: auto;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     border: 1px solid black;
 }
 
@@ -55,7 +55,7 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     border-radius:50%;
     /* border-top-left-radius: 50px;
     border-top-right-radius:20px ;
@@ -77,7 +77,7 @@
     text-align: center;
     text-decoration: none;
     color: white;
-    margin: 20px auto;
+    /* margin: 20px auto; */
 }
 
 
