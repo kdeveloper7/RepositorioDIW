@@ -19,7 +19,7 @@
     padding: 0.1px;
     height: 650px;
     background-image:linear-gradient(#00008b7e, #4683b481), url(img/hero.jpg);
-    background-image: linear-gradient(120deg, #cefea67e 0%, #f680968f 100%), url(img/hero.jpg); /*degradado transparente*/
+    background-image: linear-gradient(120deg, #cefea685 0%, #f6809684 100%), url(img/hero.jpg); /*degradado transparente*/
     background-position: center;
     background-size: cover; /*escala*/
     background-repeat: no-repeat;

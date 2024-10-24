@@ -33,19 +33,37 @@
 /* 
 1000 - inline css
 100  - ID
-10   -  Class Atributos 
+10   - Class Atributos 
 1    - Elemento
 */
+
+
+
+#title{
+    font-size: 25px;
+    border: inherit;
+    padding: inherit;
+    text-align: initial;
+    color: red;
+    font-family: initial;
+}
+
 
 .title{
     font-size: 25px;
     border: inherit;
     padding: inherit;
     text-align: initial;
-    color: initial;
+    color: blue;
     font-family: initial;
 }
 
 
-
-
+header h2 p{
+    font-size: 25px;
+    border: inherit;
+    padding: inherit;
+    text-align: initial;
+    color: blue;
+    font-family: initial;
+}

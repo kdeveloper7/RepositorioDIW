@@ -47,12 +47,15 @@ body{
 }
 
 .cta{
-    display: inline-block;
+    display:inline-block;
+    /* width: 10rem; */
+    /* margin: 0 auto; */
     color: white;
     text-decoration: none;
     border: 1px solid #fff;
     padding: 15px 25px;
     border-radius: 3px;
+    /* text-align: center; */
 }
 
 
