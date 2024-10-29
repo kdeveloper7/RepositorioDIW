@@ -26,13 +26,31 @@ body{
     margin-left: -5px;
     padding: 10px 0;
     border: 3px solid lightcoral;
+    margin:1rem 0;
 }
 
-/* Por su tipo */
+/* Por su tipo , only-of-type, elementos únicos en su padre o sección*/
 
 /* .box:only-of-type{
     background: tomato;
 } */
+
+/* div.box{
+    background: tomato;
+} */
+
+div.box:only-of-type{
+    background: tomato;
+}
+
+/*only-child , solo hijo en su padre o sección*/
+
+
+/* div:only-child{
+    background: tomato;
+} */
+
+/*first-of-type, primer elemento de su tipo en su contenedor*/
 
 /* .box:first-of-type{
     background: tomato;
@@ -79,6 +97,6 @@ body{
     background: crimson;
 } */
 
-.container :nth-last-child(1){
+/* .container :nth-last-child(1){
     background: crimson;
-}
+} */

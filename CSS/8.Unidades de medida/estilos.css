@@ -2,18 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
+    
 }
 
 body{
     font-family: Arial;
     background: #f2f2f2;
-    font-size: 20px;
+    
     height: 600px;
 }
 
 
 .opinion{
-    font-size: 2em;
+    /* font-size: 20px; */
     /* 2*20 = 40px */
     padding: 1em;
     /* 1*40 = 40px */
@@ -24,7 +26,7 @@ body{
 
 
 .title{
-    font-size: 1em;
+    font-size: 3rem;
 }
 
 
@@ -46,9 +48,10 @@ viewport height vh
     /* height: 80%; */
     /* height: 1200px; */
     background: steelblue;
-    width: 100vw;
+    width: 90vw;
+    /* width: 90%; */
     height: 100vh;
-    /* margin: 30px auto; */
+    margin: 30px auto;
 }
 
 .children{
