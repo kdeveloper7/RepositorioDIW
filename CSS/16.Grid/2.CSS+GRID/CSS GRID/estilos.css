@@ -22,7 +22,7 @@ body{
     display: grid;
 
    /* COLUMNS  */
-    grid-template-columns: 1fr 2cm 30%;
+    /* grid-template-columns: 1fr 2cm 30%; */
 
      /* repeat:  parámetros : cantidad de columnas y el tamanio */
     /* grid-template-columns:repeat(6,1fr); */
@@ -57,7 +57,7 @@ body{
 
 /* GUTTERS (ESPACIADORES)*/
 
-    row-gap: 20px;
+    /* row-gap: 20px; */
     /* column-gap: 20px;  */
 
     /* SHORTHAND */
@@ -79,11 +79,11 @@ body{
     
     /* ROWS */
     /* grid-auto-flow: column; */
-     grid-template-rows: repeat(4, 1fr);
+     /* grid-template-rows: repeat(4, 1fr); */
 
 
     /* Habilitar para explicar el posiconamiento */
-    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, 1fr);
 
     /* Si se elimina la fila se crea una fila implícita */
     
@@ -107,14 +107,16 @@ body{
         /* Posicionamiento por líneas */
     /* grid-column-start: 3; */
     /* grid-column-end: 5; */
-    /* grid-row-start: 3; */
-    /* grid-row-end: 5;  */
+    grid-row-start: 3;
+    grid-row-end: 5; 
+
+
 
     /* ShortHand de grid-column-start / end  */
 
     /* grid-column: start-line / end-line; */
 
-    /* grid-column: 3/5; */
+    grid-column: 3/5;
 
 }
 
