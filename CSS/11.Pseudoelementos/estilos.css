@@ -83,8 +83,6 @@ input[type="text"]::placeholder{
     background:salmon;
 }
 
-
-
 ul{
     counter-reset: contador;
 }

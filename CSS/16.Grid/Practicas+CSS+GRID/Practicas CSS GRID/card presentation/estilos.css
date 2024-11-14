@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+:root{
+    --color-primary: #2658e4;
+    --columns-card: repeat(5,1fr);
+    --columns-rows: repeat(8,1fr);
+
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 0;
+}
+
+.card{
+    max-width: 1000px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: var(--columns-card);
+    grid-template-rows: var(--columns-rows);
+}
+
+.card::after{
+    content: "";
+    background: red;
+    grid-column: 1/4;
+    grid-row: 1/-1;
+    background-image: url("img.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+}
+
+.card__content{
+    grid-column: 3/-1;
+    grid-row: 2/-2;
+    padding: 30px;
+    color: #fff;
+    background: var(--color-primary);
+    z-index: 1;
+}
+
+.card__title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card__description{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cta{
+    display: inline-block;
+    background: #fff;
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 18px 45px;
+}
+
+@media screen and (max-width: 768px){
+    .card::after{
+        grid-column: 1/-2;
+    }
+
+    .card__content{
+        grid-column: -1/2;
+    }
+}
+
+@media screen and (max-width: 425px){
+    :root{
+      
+        --columns-card: 1fr;
+        --columns-rows:1fr 1fr;
+    
+    }
+
+    .card::after, .card__content{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+}

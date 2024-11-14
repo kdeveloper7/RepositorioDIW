@@ -39,9 +39,9 @@ body{
     background: tomato;
 } */
 
-div.box:only-of-type{
+/* div.box:only-of-type{
     background: tomato;
-}
+} */
 
 /*only-child , solo hijo en su padre o sección*/
 
@@ -68,9 +68,6 @@ div.box:only-of-type{
 2*0=0+1=1
 2*1=2+1=3
 2*2=4+1=5
-2*3=6
-
-
 */
 
 /* .box:nth-last-of-type(odd){
@@ -93,7 +90,7 @@ div.box:only-of-type{
     background: crimson;
 } */
 
-/* body :nth-child(1){
+/* .box:nth-child(even){
     background: crimson;
 } */
 

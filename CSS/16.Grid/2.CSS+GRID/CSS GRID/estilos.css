@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Arial';
+}
+
+.grid{
+    max-width: 600px;
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    outline: 3px solid #000;
+
+/* align-items strech por defecto */
+/* Recordar el concepto de que hay una linea mas según el total de columnas */
+
+    display: grid;
+
+   /* COLUMNS  */
+    /* grid-template-columns: 100px 2cm 30%; */
+
+     /* repeat:  parámetros : cantidad de columnas y el tamanio */
+    /* grid-template-columns:repeat(6,1fr); */
+
+    /* Usa el espacio disponible para las dos fracciones */
+    /* grid-template-columns:200px 1fr 1fr ; */
+
+
+    /* Del espacio disponible lo divide en 3 y asigna la fracción correspondiente */
+    /* grid-template-columns:200px 2fr 1fr ; */
+
+
+    /* Mostrar en el navegador las medidas que tiene la caja */
+    /* grid-template-columns:3fr 1fr 1fr; */
+
+
+
+    /* grid-template-columns: repeat(10, 10%); */
+
+    /* El auto significa que se adapta a su contendio */
+
+    /* grid-template-columns: 1fr 1fr auto; */
+    /* grid-template-columns: repeat(6, auto); */
+    
+
+    /* El tercer parámetro es el tamanio alternado de la siguiente columna */
+    /* grid-template-columns:repeat(3, 20px 50px); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    
+    /* DESDE AQUÍ IR A LOS POSICIONAMIENTOS, LUEGO VOLVER */
+    /*********************************************************** */
+
+/* GUTTERS (ESPACIADORES)*/
+
+    /* row-gap: 20px; */
+    /* column-gap: 20px;  */
+
+    /* SHORTHAND */
+    /* gap: row column; */
+    /* gap: 10px ; */
+     
+
+
+     
+    /* FLOWS- FLUJO */
+
+   grid-auto-flow:column;
+    /* grid-auto-flow:column dense; */
+    /* grid-auto-flow: column; 
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr; */
+
+
+    
+    /* ROWS */
+    /* grid-auto-flow: column; */
+     /* grid-template-rows: repeat(4, 1fr); */
+
+
+    /* Habilitar para explicar el posiconamiento */
+    /* grid-template-columns: repeat(4, 1fr); */
+
+    /* Si se elimina la fila se crea una fila implícita */
+    
+}    
+
+.grid__item{
+    color: #fff;
+    font-size: 3rem;  /*el height es auto, depende del font-size */
+    text-align: center;
+    padding-top: 1rem;
+    background: crimson;
+}
+
+.grid :nth-child(1){
+    background: crimson;
+
+        /* Posicionamiento por líneas */
+    /* grid-column-start: 3; */
+    /* grid-column-end: 5; */
+    /* grid-row-start: 3; */
+    /* grid-row-end: 5;  */
+
+    /* ShortHand de grid-column-start / end  */
+
+    /* grid-column: start-line / end-line; */
+
+    /* grid-column: 3/5; */
+
+}
+
+.grid :nth-child(2){
+    /* grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    background: darkmagenta;
+
+    
+}
+
+.grid :nth-child(3){
+    background: steelblue;
+
+    /* span avanza la cantidad de  filas o columnas desde  su posicion inicial*/
+
+    /* grid-column: span 2; */
+    /* grid-row: span 3; */
+
+    /* Empieza en la columna 2 y avanza 3 columnas */
+    /* grid-column: 2 / span 3;*/
+    /* grid-row: 1 / span 3;  */
+
+    
+
+    /* NEGATIVOS: Empieza en culumnas, en la linea 3 y va hasta el final */
+    /* grid-row: 2/-1;  */
+    /* Empieza en la linea  1 y va hasta el final */
+    /* grid-column:1 / -1 ; */
+
+
+    /* GRID AREA , SHORTHAND de los anteriores*/
+
+    /* grid-area: row-start column-start row-end column-end */
+    /* grid-area: 2/2/4/5; */
+
+    
+
+
+
+
+}
+
+
+.grid :nth-child(4){
+    background: brown;
+}
+.grid :nth-child(5){
+    background: chocolate;
+}
+.grid :nth-child(6){
+    background: midnightblue;
+}
