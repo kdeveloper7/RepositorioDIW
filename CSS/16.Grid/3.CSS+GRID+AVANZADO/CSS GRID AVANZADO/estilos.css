@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    outline: 3px solid #000;
+    display: grid;
+
+
+    /****De la siguiente manera se dan nombres a las lineas de la grilla****/
+
+
+    /* grid-template-columns: [cabecera-start principal-start] 1fr 1fr 1fr 1fr [cabecera-end principal-end]; */
+    /* grid-template-columns: [linea-inicial] 1fr [linea-final]; */
+    /* grid-template-columns: [linea-inicial] 1fr [linea-final] 1fr 1fr ; */
+
+
+
+    /**Las líneas pueden tener varios nombres**/
+
+    /* grid-template-columns: [cabecera-start principal-start] 1fr 1fr 1fr 1fr [cabecera-end principal-end]; */
+
+
+    /**Se puede dar nombres de forma dinámica**/
+
+    
+    /* grid-template-columns: repeat(4, [column-start] 1fr [column-end]); */
+    /* grid-template-rows: repeat(3, [fila-start] 1fr [fila-end]); */
+
+
+    /**Al inspeccionar en google chrome se puede ver el nombre asignado al inicio y fina tanto de filas como de colimnas de las areas**/
+
+    /* grid-template-areas: 
+    "header header header header"
+    "main   main   main   sidebar"
+    "footer footer footer footer"; */
+
+    /**Explicación min-content max-content : son unidades de medida para defeinir filas y columnas**/
+    /**min-content: Crea un track con el mínimo de contenido posible**/
+    /**max-content: Crea un track con el máximo de contenido posible**/
+
+    /**Para probar lo anterior modificar el texto de los divs del html**/
+    /* grid-template-columns: min-content max-content; */
+
+
+    /** fit-content: Nos ayudará a definir un tamaño máximo en donde se mantendrá la propiedad min-content, al superar ese tamaño se aplicará max-content**/
+
+    /* grid-template-columns: fit-content(400px); */
+
+
+    /**minmax() : esta función recibe dos parámetros, el primero es el valor mínimo y el segundo el valor máximo , est también es la unidad de medidad de una fila o columna **/
+
+    /* grid-template-columns: minmax(200px, 800px); */
+    /* grid-template-columns: minmax(200px, 800px) minmax(800px, 1fr);  */
+
+
+    /**Ahora estudiaremos como todas estas propiedades trabajan en conjunto para hacer grillas dinámicas y responsivas sin usar media queries**/
+
+
+    /**auto-fill y auto-fit: Estas propiedades se usan para crear grillas dinámicas, estas propiedades se usan junto con repeat()**/
+
+
+    /**auto-fill: crea tantos tracks como el espacio disponible se lo permita**/
+    /*Mostrar varios ejemplos con porcentajes*/
+
+    /* grid-template-columns: repeat(auto-fill, 10%); */
+    /* grid-template-columns: repeat(auto-fill, 300px); */
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+
+
+    /**auto-filt: difrente a auto-fill, auto-fit crea tantos tracks como le sea necesario, es decir, las que va requerir u occupar **/
+
+
+    /**auto-fit: crea tantos tracks como le sea necesario**/
+
+    /* grid-template-columns: repeat(auto-fit, 10%); */
+
+    /* grid-template-columns: repeat(auto-fit, minmax(max-content, 300px)); */
+    /* grid-template-columns: repeat(1,150px); */
+    /* grid-template-rows: repeat(3,150px); */
+    
+
+
+    /***Alineación con GRID ITEMS**/
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    /* justify-items: start|end|center|stretch (por defecto) alinea los elementos en filas */
+    justify-items: start;  
+
+
+    /* align-items: start|end|stretch|center;  alinea los elementos en columnas*/
+    /* align-items: start; */
+
+
+
+    /* place-items: align-items justify-items; shorthand de align-items y justify-items*/
+    /* place-items: center end; */
+
+
+    
+
+    /* justify-content: start|end|space-between|center|stretch|space-evenly|space-around; */
+    /* align-content: start|end|space-between|center|stretch|space-evenly|space-around; */
+
+    /* place-content: align-content justify-content; */
+
+    /* grid:rows/columns; */
+    /* grid-template-columns: repeat(4,1fr); */
+}
+
+
+
+.grid__item{
+    padding: 20px 0;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    order: 0;
+}
+
+.grid :nth-child(1){
+    background: slateblue;
+    /* grid-column: column-start 2 /column-start 4; */
+    /* grid-row: fila-start 2/fila-end 3; */
+    /* grid-column: header-start/header-end; */
+    /* grid-row: header-start/header-end; */
+    align-self: stretch;
+    justify-self: stretch;
+    /* place-self: align justify; */
+    /* place-self: start end; */
+    place-self: center;
+}
+
+.grid :nth-child(2){
+    background: crimson;
+    /* grid-column: main-start/main-end; */
+    /* grid-row: main-start/main-end; */
+ 
+}
+
+.grid :nth-child(3){
+    background: coral;
+    /* grid-column: sidebar-start/sidebar-end; */
+    /* grid-row: sidebar-start/sidebar-end; */
+}
+
+.grid :nth-child(4){
+    background: indigo;
+    /* grid-column: footer-start/footer-end; */
+    /* grid-row: footer-start/footer-end; */
+}
